@@ -1,0 +1,41 @@
+<html lang="en">
+<div class="row">
+    <div class="col-md-12 text-center">
+        <h2>Add Task</h2>
+    </div>
+
+
+
+    <div class="row ">
+        <form [formGroup]="tasks" novalidate class="form">
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-6  text-center">Task Name: <input type="text" formControlName="taskName"
+                        class="form-control">
+                    <div class="col-md-3"></div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8 text-center">Description: <input type="text" formControlName="taskDescription"
+                        class="form-control"></div>
+                <div class="col-md-2"></div>
+            </div>
+
+
+
+
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8 ">
+                    <button class="btn btn-success" onclick="submitTask()">Submit</button>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+        </form>
+    </div>
+</div>
+
+</html>
